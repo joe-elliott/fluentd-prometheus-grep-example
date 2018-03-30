@@ -53,6 +53,8 @@ As far as I can tell there is no way to do something clever like:
 
 With this setup you will publish prometheus counters for each substring and a summary to track the total processing time incurred by adding the substringcounter filter.  This will allow you to generate graphs and alerts using a visualization package like Grafana.
 
+![grafana screenshot](screenshots/grafana_screen.png)
+
 ## Fair Warning
 
 I am not a Fluentd, Ruby or Prometheus expert.  Any advice is welcome and encouraged.  This was a simple solution I patched together in a weekend to give better visibility on Kubernetes cluster logs during offloading. 
