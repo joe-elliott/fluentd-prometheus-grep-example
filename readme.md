@@ -35,7 +35,7 @@ The matching prometheus config is unfortunately very verbose:
 </filter>
 ```
 
-As far as I can tell there is no way to do something clever like:
+Unfortunately, as far as I can tell there is no way to do something clever like:
 
 ```
 <filter **>
@@ -57,4 +57,4 @@ With this setup you will publish prometheus counters for each substring and a su
 
 ## Fair Warning
 
-I am not a Fluentd, Ruby or Prometheus expert.  Any advice is welcome and encouraged.  This was a simple solution I patched together in a weekend to give better visibility on Kubernetes cluster logs during offloading. 
+I am not a Fluentd, Ruby or Prometheus expert.  Any advice is welcome and encouraged.  This was a simple solution I patched together in a weekend to give better visibility on Kubernetes cluster logs during offloading.  If you need to do serious log analysis and aggegration there are paid services like Splunk or you can try running your own Elasticsearch cluster. 
