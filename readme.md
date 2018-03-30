@@ -35,7 +35,7 @@ The matching prometheus config is unfortunately very verbose:
 </filter>
 ```
 
-Unfortunately, as far as I can tell there is no way to do something clever like:
+Unfortunately, as far as I can tell, there is no way to do something clever like:
 
 ```
 <filter **>
